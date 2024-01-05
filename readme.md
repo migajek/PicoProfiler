@@ -104,4 +104,4 @@ private static async Task PlainSample()
 
 ## Chanelog
 
- * 0.2.0 first public release
+ * 0.2.1 first public release
