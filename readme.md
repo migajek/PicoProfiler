@@ -2,6 +2,36 @@
 
 PicoProfiler is a tiny abstraction layer over built-in `Stopwatch`, leveraging `IDisposable + using` pattern
 
+It's intended use is to measure the time of execution of given block of code and store it somewhere - usually the log entry, hence the built-in integration with `Microsoft.Extensions.Logging`.
+
+Just wrap the code you want to measure in `using (_logger.StartProfiler())` (or use `using declaration` as below):
+```c#
+private async Task ProcessRules(object[] objects)
+{
+    using var _ = _logger.StartProfiler();
+
+    foreach (var o in objects)
+    {
+        using (_logger.StartProfiler($"Processing rule {o}", logLevel: LogLevel.Trace))
+        {
+            await Task.Delay(15);
+        }
+    }
+}
+```
+
+results in:
+```
+trce: PicoSampleApp.AlmostRealLifeService[0]
+      Processing rule 0 finished in 28.01 ms
+trce: PicoSampleApp.AlmostRealLifeService[0]
+      Processing rule 1 finished in 15.26 ms
+trce: PicoSampleApp.AlmostRealLifeService[0]
+      Processing rule 2 finished in 16.06 ms
+info: PicoSampleApp.AlmostRealLifeService[0]
+      ProcessRules finished in 59.74 ms
+```
+
 ## Getting started
 
 ### Microsoft.Extensions.Logging integration

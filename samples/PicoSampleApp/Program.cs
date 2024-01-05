@@ -10,12 +10,18 @@ internal class Program
 {
     static async Task Main(string[] args)
     {
+        // 1. Plain sample
         await PlainSample();
 
+        // 2. Console output
         await RunConsoleSample();
 
+        // 3. Logging output
         using var loggerFactory = CreateLoggerFactory();
         await RunLoggingSample(loggerFactory.CreateLogger<Program>());
+
+        // 4. real life usage scenarios
+        await new AlmostRealLifeService(loggerFactory.CreateLogger<AlmostRealLifeService>()).HandleMessage();
     }
 
     private static async Task PlainSample()
@@ -37,7 +43,7 @@ internal class Program
     }
 
     private static ILoggerFactory CreateLoggerFactory() => LoggerFactory
-        .Create(lb => lb.AddConsole(cfg => { }));
+        .Create(lb => lb.SetMinimumLevel(LogLevel.Trace).AddConsole(cfg => { }));
 
     private static async Task MyTimeConsumingWork() => await Task.Delay(TimeSpan.FromMilliseconds(374));
 }
