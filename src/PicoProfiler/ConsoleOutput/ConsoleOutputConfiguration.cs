@@ -9,5 +9,5 @@ public sealed class ConsoleOutputConfiguration
     }
 
     public ConsoleMessageFactoryWithActionName DefaultMessageFactory { get; set; }
-        = (actionName, elapsedTime) => "";
+        = (actionName, elapsedTime) => $"{actionName} finished in {elapsedTime.TotalMilliseconds:.##} ms";
 }

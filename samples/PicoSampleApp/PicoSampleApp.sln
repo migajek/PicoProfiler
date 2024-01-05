@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicoSampleApp", "PicoSampleApp.csproj", "{CAB0DF19-22C1-4D00-AFF3-8B289B0880BF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PicoProfiler.Logging", "..\..\src\PicoProfiler.Logging\PicoProfiler.Logging.csproj", "{BEECD099-7C81-4133-8FCE-1C56B1BDED88}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PicoProfiler", "..\..\src\PicoProfiler\PicoProfiler.csproj", "{F56EF65C-0B2B-4364-9ADB-092FD1BDF715}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAB0DF19-22C1-4D00-AFF3-8B289B0880BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAB0DF19-22C1-4D00-AFF3-8B289B0880BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAB0DF19-22C1-4D00-AFF3-8B289B0880BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAB0DF19-22C1-4D00-AFF3-8B289B0880BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEECD099-7C81-4133-8FCE-1C56B1BDED88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEECD099-7C81-4133-8FCE-1C56B1BDED88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEECD099-7C81-4133-8FCE-1C56B1BDED88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEECD099-7C81-4133-8FCE-1C56B1BDED88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F56EF65C-0B2B-4364-9ADB-092FD1BDF715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F56EF65C-0B2B-4364-9ADB-092FD1BDF715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F56EF65C-0B2B-4364-9ADB-092FD1BDF715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F56EF65C-0B2B-4364-9ADB-092FD1BDF715}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CF720C8F-3DB6-475E-81AE-D9567D54D46D}
+	EndGlobalSection
+EndGlobal

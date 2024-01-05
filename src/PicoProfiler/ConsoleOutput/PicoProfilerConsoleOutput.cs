@@ -11,4 +11,12 @@ public static class PicoProfilerConsoleOutput
 
         return Profiler.Create(time => Console.WriteLine(factory(actionName, time)));
     }
+
+    public static IPicoProfiler Start([CallerMemberName] string actionName = null,
+        ConsoleMessageFactoryWithActionName? messageFactory = null)
+    {
+        var profiler = Create(actionName, messageFactory);
+        profiler.Start();
+        return profiler;
+    }
 }
