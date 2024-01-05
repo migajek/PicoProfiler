@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PicoSampleApp", "PicoSampleApp.csproj", "{CAB0DF19-22C1-4D00-AFF3-8B289B0880BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PicoSampleApp", "PicoSampleApp.csproj", "{CAB0DF19-22C1-4D00-AFF3-8B289B0880BF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PicoProfiler.Logging", "..\..\src\PicoProfiler.Logging\PicoProfiler.Logging.csproj", "{BEECD099-7C81-4133-8FCE-1C56B1BDED88}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PicoProfiler", "..\..\src\PicoProfiler\PicoProfiler.csproj", "{F56EF65C-0B2B-4364-9ADB-092FD1BDF715}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PicoProfiler.Tests", "..\..\src\PicoProfiler.Tests\PicoProfiler.Tests.csproj", "{FC17C1B7-D16A-44DD-A791-401E86B08402}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +27,6 @@ Global
 		{F56EF65C-0B2B-4364-9ADB-092FD1BDF715}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F56EF65C-0B2B-4364-9ADB-092FD1BDF715}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F56EF65C-0B2B-4364-9ADB-092FD1BDF715}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FC17C1B7-D16A-44DD-A791-401E86B08402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FC17C1B7-D16A-44DD-A791-401E86B08402}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FC17C1B7-D16A-44DD-A791-401E86B08402}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FC17C1B7-D16A-44DD-A791-401E86B08402}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
