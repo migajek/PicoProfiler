@@ -9,7 +9,7 @@
     <PackageTags>PicoProfiler;Profiler;Pico;Logging;Micro;Profiling;Lightweight;Performance</PackageTags>
     <PackageProjectUrl>https://github.com/migajek/PicoProfiler</PackageProjectUrl>
     <Description>Integrates PicoProfiler with Microsoft.Extensions.Logging</Description>
-    <Version>0.2.2</Version>
+    <Version>0.2.3</Version>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
@@ -21,6 +21,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PicoProfiler\PicoProfiler.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../readme.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
 </Project>
