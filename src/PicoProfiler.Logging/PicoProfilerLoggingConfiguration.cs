@@ -2,9 +2,9 @@
 
 namespace PicoProfiler.Logging;
 
-public class PicoProfilerLoggingConfiguration
+public class LoggerOutputConfiguration
 {
-    public static PicoProfilerLoggingConfiguration Instance = new ();
+    public static LoggerOutputConfiguration Instance = new ();
 
     public LogLevel DefaultLogLevel { get; set; }= LogLevel.Information;
 
@@ -12,7 +12,7 @@ public class PicoProfilerLoggingConfiguration
         (actionName, time) => ("{ActionName} finished in {ElapsedMilliseconds:.##} ms",
             new object[] { actionName, time.TotalMilliseconds });
 
-    private PicoProfilerLoggingConfiguration()
+    private LoggerOutputConfiguration()
     {
     }
 }

@@ -16,7 +16,7 @@ public static class PicoProfilerLoggingExtensions
         LogLevel? logLevel = null)
     {
         // evaluate it now as config might change later.
-        var level = logLevel ?? PicoProfilerLoggingConfiguration.Instance.DefaultLogLevel;
+        var level = logLevel ?? LoggerOutputConfiguration.Instance.DefaultLogLevel;
 
         return Profiler.Create(elapsed =>
         {
@@ -56,7 +56,7 @@ public static class PicoProfilerLoggingExtensions
         LogLevel? logLevel = null)
     {
         
-        var action = messageFactory ?? PicoProfilerLoggingConfiguration.Instance.DefaultActionMessageFactory;
+        var action = messageFactory ?? LoggerOutputConfiguration.Instance.DefaultActionMessageFactory;
         return CreateProfiler(logger,
             ts => action(actionName, ts),
             logLevel);
