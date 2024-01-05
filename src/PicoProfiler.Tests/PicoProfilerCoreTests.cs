@@ -3,7 +3,7 @@ using FluentAssertions;
 
 namespace PicoProfiler.Tests;
 
-public class PicoProfilerTests
+public class PicoProfilerCoreTests
 {
     private static readonly TimeSpan DelayTime = TimeSpan.FromMilliseconds(50);
 
