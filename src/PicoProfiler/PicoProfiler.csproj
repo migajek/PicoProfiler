@@ -9,7 +9,10 @@
     <PackageTags>PicoProfiler;Profiler;Pico;Micro;Profiling;Lightweight;Peformance</PackageTags>
     <PackageProjectUrl>https://github.com/migajek/PicoProfiler</PackageProjectUrl>
     <Description>Tiny abstraction layer over Stopwatch, leveraging IDisposable and enabling using pattern usage</Description>
-    <Version>0.2.1</Version>
+    <Version>0.2.2</Version>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
   </PropertyGroup>
 
 </Project>

@@ -9,7 +9,7 @@ public class LoggerOutputConfiguration
     public LogLevel DefaultLogLevel { get; set; }= LogLevel.Information;
 
     public LoggerMessageFactoryWithActionName DefaultActionMessageFactory = 
-        (actionName, time) => ("{ActionName} finished in {ElapsedMilliseconds:.##} ms",
+        (actionName, time) => ("{ActionName} finished in {ElapsedMilliseconds:0.##} ms",
             new object[] { actionName, time.TotalMilliseconds });
 
     private LoggerOutputConfiguration()

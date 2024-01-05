@@ -134,4 +134,5 @@ private static async Task PlainSample()
 
 ## Chanelog
 
+ * 0.2.2 fixed default float formatting for displaying elapsed miliseconds
  * 0.2.1 first public release
