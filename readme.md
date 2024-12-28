@@ -1,6 +1,6 @@
 # PicoProfiler
 
-PicoProfiler is a tiny abstraction layer over built-in `Stopwatch`, leveraging `IDisposable + using` pattern
+PicoProfiler is a tiny abstraction layer over built-in `Stopwatch`, leveraging `IDisposable + using` pattern and structured logging.
 
 It's intended use is to measure the time of execution of given block of code and store it somewhere - usually the log entry, hence the built-in integration with `Microsoft.Extensions.Logging`.
 
@@ -31,6 +31,8 @@ trce: PicoSampleApp.AlmostRealLifeService[0]
 info: PicoSampleApp.AlmostRealLifeService[0]
       ProcessRules finished in 59.74 ms
 ```
+
+What you however don't see here, is the power of structured logging. Combine the PicoProfiler with a tool like [Datalust Seq](https://datalust.co/seq) for querying, reporting etc.
 
 ## Getting started
 
@@ -114,7 +116,7 @@ The following code will create a plain profiler and call the provided action at 
 ```
 private static async Task PlainSample()
 {
-    Profiler.Start(elapsed => Debug.WriteLine($"Elapsed time is: {elapsed.TotalMilliseconds:.##}"));
+    using var _= Profiler.Start(elapsed => Debug.WriteLine($"Elapsed time is: {elapsed.TotalMilliseconds:.##}"));
     await MyTimeConsumingWork();
 }
 ```
