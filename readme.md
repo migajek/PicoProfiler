@@ -32,7 +32,8 @@ info: PicoSampleApp.AlmostRealLifeService[0]
       ProcessRules finished in 59.74 ms
 ```
 
-What you however don't see here, is the power of structured logging. Combine the PicoProfiler with a tool like [Datalust Seq](https://datalust.co/seq) for querying, reporting etc.
+What you however don't see here, is the power of structured logging. 
+Combine the PicoProfiler with a tool like [Datalust Seq](https://datalust.co/seq) for querying, reporting etc - this is where structured logging shines.
 
 ## Getting started
 
